@@ -4,9 +4,8 @@
 
 [![Kaggle](https://img.shields.io/badge/Kaggle-BirdCLEF+2026-20BEFF?style=for-the-badge&logo=kaggle)](https://www.kaggle.com/competitions/birdclef-2026)
 [![Score](https://img.shields.io/badge/Final%20Score-0.95095-brightgreen?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
-[![Rank](https://img.shields.io/badge/Rank-812%2F4243-blue?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
-[![Top](https://img.shields.io/badge/Top-20%25-orange?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
-
+[![Rank](https://img.shields.io/badge/Rank-812%2F4084-blue?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
+[![Top](https://img.shields.io/badge/Top-19.9%25-orange?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
 -----
 
 ## 📋 Table of Contents
