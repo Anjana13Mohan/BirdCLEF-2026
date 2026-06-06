@@ -3,8 +3,8 @@
 ## Passive Acoustic Monitoring in the Pantanal Wetlands of Brazil
 
 [![Kaggle](https://img.shields.io/badge/Kaggle-BirdCLEF+2026-20BEFF?style=for-the-badge&logo=kaggle)](https://www.kaggle.com/competitions/birdclef-2026)
-[![Score](https://img.shields.io/badge/Final%20Score-0.950-brightgreen?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
-[![Rank](https://img.shields.io/badge/Rank-867%2F4243-blue?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
+[![Score](https://img.shields.io/badge/Final%20Score-0.95095-brightgreen?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
+[![Rank](https://img.shields.io/badge/Rank-812%2F4243-blue?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
 [![Top](https://img.shields.io/badge/Top-20%25-orange?style=for-the-badge)](https://www.kaggle.com/anjanamohan13)
 
 -----
@@ -30,7 +30,7 @@ This repository documents my end-to-end solution for **BirdCLEF+ 2026**, a Kaggl
 
 The competition required CPU-only inference within a **90-minute runtime limit**, making efficient model design critical.
 
-**Final Result:** Public Score **0.950** | Private Score **0.941** | Rank **867/4243** | **Top 20%**
+**Final Result:** Public Score **0.95095** | Private Score **0.941** | Rank **812/4243** | **Top 19%**
 
 -----
 
@@ -46,8 +46,8 @@ The competition required CPU-only inference within a **90-minute runtime limit**
 |**Data**        |Passive acoustic monitoring recordings from Pantanal, Brazil|
 |**Constraint**  |CPU-only inference, 90-minute runtime limit                 |
 |**Participants**|4,243 teams                                                 |
-|**My Score**    |0.950 (public) / 0.941 (private)                            |
-|**My Rank**     |867 / 4243 (Top 20%)                                        |
+|**My Score**    |0.95095 (public) / 0.941 (private)                          |
+|**My Rank**     |812 / 4243 (Top 19%)                                        |
 
 -----
 
@@ -62,7 +62,7 @@ Start:    0.897  →  Probe pipeline (baseline)
 +0.003:   0.947  →  Fork optimized public pipeline
 +0.001:   0.948  →  Dataset enhancements
 +0.001:   0.949  →  Pipeline refinements
-+0.001:   0.950  →  Final optimized submission
++0.001:   0.95095  →  Final optimized submission
 ```
 
 > **Key insight:** The largest single improvement (+0.032) came from replacing the simple probe pipeline with a ProtoSSM + Tucker’s distilled SED ensemble — demonstrating the power of combining temporal sequence modeling with spectrogram-based sound event detection.
@@ -71,7 +71,7 @@ Start:    0.897  →  Probe pipeline (baseline)
 
 ## 🏗️ Architecture
 
-### Final Pipeline (Score: 0.950)
+### Final Pipeline (Score: 0.95095)
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -210,16 +210,16 @@ Per-species MLP classifiers on PCA-compressed Perch embeddings:
 
 ### What Worked ✅
 
-|Experiment                   |Score|Δ     |
-|-----------------------------|-----|------|
-|Baseline probe pipeline      |0.897|—     |
-|Pseudo-label augmentation    |0.900|+0.003|
-|SED ensemble (60/40)         |0.908|+0.008|
-|ProtoSSM + Tucker SED        |0.940|+0.032|
-|Increased epochs (40→60)     |0.944|+0.004|
-|Pipeline fork + optimizations|0.947|+0.003|
-|perch_v2.onnx (with DFT)     |0.948|+0.001|
-|Final refinements            |0.950|+0.002|
+|Experiment                   |Score  |Δ     |
+|-----------------------------|-------|------|
+|Baseline probe pipeline      |0.897  |—     |
+|Pseudo-label augmentation    |0.900  |+0.003|
+|SED ensemble (60/40)         |0.908  |+0.008|
+|ProtoSSM + Tucker SED        |0.940  |+0.032|
+|Increased epochs (40→60)     |0.944  |+0.004|
+|Pipeline fork + optimizations|0.947  |+0.003|
+|perch_v2.onnx (with DFT)     |0.948  |+0.001|
+|Final refinements            |0.95095|+0.002|
 
 ### What Didn’t Work ❌
 
@@ -322,10 +322,10 @@ Total:                    ~4.5 min (well within 90-min limit)
 ### Final Competition Standing
 
 ```
-Public Score: 0.950
+Public Score: 0.95095
 Private Score: 0.941
-Rank:     867 / 4,243
-Top:      20.4%
+Rank:     812 / 4,243
+Top:      19.1%
 ```
 
 ### Score by Technique
@@ -337,13 +337,13 @@ Raw Perch ONNX only:          ~0.870
 + ProtoSSM sequence model:    ~0.930
 + Tucker SED ensemble:        ~0.940
 + Post-processing stack:      ~0.947
-+ Optimized pipeline:         ~0.950
++ Optimized pipeline:         ~0.95095
 ```
 
 ### Competition Context
 
 - **Top score:** 0.961 (rank 1)
-- **Silver cutoff:** ~0.950
+- **Silver cutoff:** ~0.95095
 - **Bronze cutoff:** ~0.951 (final)
 - **Theoretical ceiling:** ~0.940 for 206/234 classes
 
@@ -368,7 +368,7 @@ Raw Perch ONNX only:          ~0.870
 BirdCLEF_2026/
 ├── README.md                          # This file
 ├── notebooks/
-│   ├── inference_protossm_sed.ipynb   # Main inference notebook (0.950)
+│   ├── inference_protossm_sed.ipynb   # Main inference notebook (0.95095)
 │   ├── training_hgnetv2_b0.ipynb      # HGNetV2-B0 training (AUC=0.951/fold)
 │   └── baseline_probe.ipynb           # Initial baseline (0.897)
 ├── docs/
