@@ -30,7 +30,7 @@ This repository documents my end-to-end solution for **BirdCLEF+ 2026**, a Kaggl
 
 The competition required CPU-only inference within a **90-minute runtime limit**, making efficient model design critical.
 
-**Final Result:** Public Score **0.95095** | Private Score **0.941** | Rank **812/4243** | **Top 19%**
+**Final Result:** Public Score **0.95095** | Private Score **0.941** | Rank **812/4084** | **Top 19.9%**
 
 -----
 
@@ -47,7 +47,7 @@ The competition required CPU-only inference within a **90-minute runtime limit**
 |**Constraint**  |CPU-only inference, 90-minute runtime limit                 |
 |**Participants**|4,243 teams                                                 |
 |**My Score**    |0.95095 (public) / 0.941 (private)                          |
-|**My Rank**     |812 / 4243 (Top 19%)                                        |
+|**My Rank**     |812 / 4084 (Top 19.9%)                                        |
 
 -----
 
@@ -324,8 +324,8 @@ Total:                    ~4.5 min (well within 90-min limit)
 ```
 Public Score: 0.95095
 Private Score: 0.941
-Rank:     812 / 4,243
-Top:      19.1%
+Rank:     812 / 4084
+Top:      19.9%
 ```
 
 ### Score by Technique
